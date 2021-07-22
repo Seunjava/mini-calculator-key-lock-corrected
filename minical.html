@@ -1,0 +1,237 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <script>
+        function loginchecker()
+        {
+            var unv = un.value; Vu1=V1.value; Vu2=V2.value;RsVu=R.value;
+            if (unv =="")
+            {
+                alert("Your usename is empty");
+            }
+
+            if (Vu1 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+            if (Vu2 =="")
+            {
+                alert("Enter the first Value");
+            }
+
+        }
+
+
+        // function Calculator()
+        // {
+        //     var Vu1=V1.value; Vu2=V2.value;RsVu=R.value;
+             
+        //     if (Vu1 =="")
+        //     {
+        //         alert("Enter the first Value");
+        //     }
+
+        //     if (Vu2 =="")
+        //     {
+        //         alert("Enter the first Value");
+        //     }
+
+        // }
+
+        // onkeyup="sum()"
+    
+        // function sum() {
+        // var Vu1=V1.value; Vu2=V2.value;RsVu=R.value;
+             
+        //     if (Vu1 =="")
+        //     {
+        //         alert("Enter the first Value");
+        //     }
+
+        //     if (Vu2 =="")
+        //     {
+        //         alert("Enter the first Value");
+        //     }
+
+        // var Vu1 = document.getElementById('V1').value;
+        // var Vu2 = document.getElementById('V2').value;
+        // var R = parseInt(Vu1) + parseInt(Vu2);
+        // if(!isNaN(R)){
+        //     document.getElementById('txt3').value = result;
+        // }
+
+    //     
+    
+//     function multiplyBy()
+// {
+//         num1 = document.getElementById("V1").value;
+//         num2 = document.getElementById("V2").value;
+//         document.getElementById("result").innerHTML = num1 * num2;
+// }
+
+// function divideBy() 
+// { 
+//          num1 = document.getElementById("V1").value;
+//         num2 = document.getElementById("V2").value;
+// document.getElementById("result").innerHTML = num1 / num2;
+// }
+
+
+//    }
+
+function sum() {
+            var txtFirstNumberValue = document.getElementById('txt1').value;
+            var txtSecondNumberValue = document.getElementById('txt2').value;
+            if (txtFirstNumberValue =="")
+            {
+                alert("Enter the first Value");
+            }
+            if (txtSecondNumberValue =="")
+            {
+                alert("Enter the Second Value");
+            }
+
+             
+            var result = parseInt(txtFirstNumberValue) + parseInt(txtSecondNumberValue);
+            
+            if (!isNaN(result)) {
+                document.getElementById('txt3').value = result;
+            }
+
+            
+        }
+
+        function Mul() {
+            var txtFirstNumberValue = document.getElementById('txt1').value;
+            var txtSecondNumberValue = document.getElementById('txt2').value;
+            if (txtFirstNumberValue =="")
+            {
+                alert("Enter the first Value");
+            }
+            if (txtSecondNumberValue =="")
+            {
+                alert("Enter the Second Value");
+            }
+            txtFirstNumberValue = parseInt(txtFirstNumberValue);
+            txtSecondNumberValue = parseInt(txtSecondNumberValue);
+            console.log(typeof txtFirstNumberValue); // string
+            console.log(typeof txtSecondNumberValue); // string
+                        var result = parseInt(txtFirstNumberValue) * parseInt(txtSecondNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('txt3').value = result;
+            }
+        }
+
+        function Divide() {
+            var txtFirstNumberValue = document.getElementById('txt1').value;
+            var txtSecondNumberValue = document.getElementById('txt2').value;
+            if (txtFirstNumberValue =="")
+            {
+                alert("Enter the first Value");
+            }
+            if (txtSecondNumberValue =="")
+            {
+                alert("Enter the Second Value");
+            }
+
+            txtFirstNumberValue = parseInt(txtFirstNumberValue);
+            txtSecondNumberValue = parseInt(txtSecondNumberValue);
+            console.log(typeof txtFirstNumberValue); // string
+            console.log(typeof txtSecondNumberValue); // string
+                        var result = parseInt(txtFirstNumberValue) / parseInt(txtSecondNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('txt3').value = result;
+            }
+        }
+
+        function Subst() {
+            var txtFirstNumberValue = document.getElementById('txt1').value;
+            var txtSecondNumberValue = document.getElementById('txt2').value;
+            if (txtFirstNumberValue =="")
+            {
+                alert("Enter the first Value");
+            }
+            if (txtSecondNumberValue =="")
+            {
+                alert("Enter the Second Value");
+            }
+
+            txtFirstNumberValue = parseInt(txtFirstNumberValue);
+            txtSecondNumberValue = parseInt(txtSecondNumberValue);
+            console.log(typeof txtFirstNumberValue); // string
+            console.log(typeof txtSecondNumberValue); // string
+                        var result = parseInt(txtFirstNumberValue) - parseInt(txtSecondNumberValue);
+            if (!isNaN(result)) {
+                document.getElementById('txt3').value = result;
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+<fieldset style="margin: 200px 200px; color: white; width: 60%; background-color: darkgreen; border-radius: 20px;font-size: 20px; font-weight: bold; box-shadow: seagreen yellow;">
+    
+      <span style="align-content: center;margin-left: 320px;margin-bottom: 35px; font-weight: bold;font-size: xx-large; justify-content: center; color: white;">
+          Mini Calculator
+      </span>  
+      <br>
+    <label for=""style="color: yellow; margin-left: 200px;">Value 1</label><input style="margin-left: 20px;border-radius: 4px;font-size: 20px; font-weight: bold;" type="text" id="txt1"> <br> <br>
+    <label for=""style="color: yellow; margin-left: 200px;">Value 2</label><input style="margin-left: 20px;border-radius: 4px;font-size: 20px; font-weight: bold;" type="text" id="txt2"><br><br>
+    <label for=""style="color: yellow; margin-left: 200px;">Results</label><input style="margin-bottom: 20px; margin-left: 22px;border-radius: 4px;font-size: 20px; font-weight: bold;" type="text" id="txt3" readonly>
+
+    <fieldset style="width: 96%; background-color:  white; border-radius: 5px;">
+        <legend style="margin-top: 30px;background-color: red;margin: 0px 30px; color: ;font-size: 20px; font-weight: bold;">Perform Operation</legend>
+        <button onclick="sum();" style="margin-left: 80px; height: 35px; background-color: yellowgreen; color: white; width: 100px;font-size: 20px; font-weight: bold;" type="submit">+</button> 
+        <button onclick="Subst();" style="margin-left: 80px;font-weight: bold; margin-top: 20px; height: 35px; background-color: yellowgreen;font-size: 20px; color: white; width: 100px;" type="submit">-</button>
+        <button onclick=" Mul();" style="margin-left: 80px; height: 35px;font-weight: bold; background-color: yellowgreen; color: white;font-size: 20px; width: 100px;" type="submit">*</button> 
+        <button onclick="Divide();" style="margin-left: 80px;font-weight: bold; height: 35px; background-color: yellowgreen; color: white; font-size: 20px; width: 100px;" type="submit">/</button>
+    </fieldset>
+</fieldset>
+
+    
+
+
+    
+
+
+
+
+
+    <div style="margin: 50px 50px;">
+            <label for="">Username</label><input type="text" style="margin-left: 20px;" id="un" value="" name="usern" placeholder=" Enter your Username"> <br> <br>
+
+            <label for="">Password</label><input type="text" style="margin-left: 20px;" id="pwd" value="" name="PassW" placeholder=" Enter your Password"><br><br>
+
+            <button onclick="loginchecker()" style="margin-left: 80px; height: 35px; background-color: blue; color: white; width: 100px;" type="Login">Login</button>
+
+    </div>
+    
+    <div style="margin: 50px 50px;">
+        <label for="">value 1</label><input type="text" style="margin-left: 20px;" id="V1"  value="" name="usern" placeholder=" Enter the first value"> <br> <br>
+
+        <label for="">Value 2</label><input type="text" style="margin-left: 20px;" id="V2"  value="" name="PassW" placeholder=" Enter your second value"><br><br>
+
+        <label for="">Result</label><input type="text" style="margin-left: 20px;" id="R" value="" name="PassW" placeholder=" result displayed"><br><br>
+
+        <button onkeyup="sum()" style="height: 35px; background-color: blue; color: white; width: 100px;justify-content: center;font-size: xx-large;" type="Login">-</button> 
+        
+        <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        
+        <button onClick="multiplyBy()" style="margin-left: 80px; height: 35px; background-color: blue; color: white; width: 100px;justify-content: center;font-size: xx-large;" type="Login">/</button> 
+
+             
+
+</div>
+<p>The Result is : <br>
+    <span id = "result"></span>
+    </p>
+
+</body>
+</html>
